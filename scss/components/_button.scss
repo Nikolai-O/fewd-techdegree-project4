@@ -1,0 +1,63 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    @media (min-width: $mq-desktop) {
+        padding: 10px 30px;
+    }
+    &:hover {
+        transition: background 1s;
+    }
+}
+
+
+@media (min-width: $mq-desktop) {
+    .btn + .btn {
+        margin-left: 10px;
+      }
+}
+
+
+
+
+.default {
+    background-color: $base-link-color;
+    &:hover {
+        background: lighten($base-link-color, 15%)
+    }
+}
+
+.error {
+    background-color: #e4757a;
+    &:hover {
+        background: lighten(#e4757a, 15%)
+    }
+}
+
+.info {
+    background-color: #927bc1;
+    &:hover {
+        background: lighten(#927bc1, 15%)
+    }
+}
+
+.success {
+    background-color: #63cc82;
+    &:hover {
+        background: lighten(#63cc82, 15%)
+    }
+}
+
+.warning {
+    background-color: #fd7856;
+    &:hover {
+        background: lighten(#fd7856, 15%)
+    }
+}
